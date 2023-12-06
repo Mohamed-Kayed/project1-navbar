@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+  height: 5000px;
+}
+:root {
+  --mainColor: #545be8;
+}
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  font-weight: 700;
+}
+.header {
+  background-color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .logo a {
+  color: var(--mainColor);
+  font-size: 14px;
+}
+.header .navbar ul {
+  display: flex;
+  gap: 16px;
+}
+.header .navbar a {
+  color: #101928;
+  font-size: 14px;
+}
+.header .auth-btn {
+  display: flex;
+  gap: 15px;
+}
+.header .auth-btn a {
+  padding: 5px 35px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header .auth-btn .login {
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+.header .auth-btn .register {
+  color: #fff;
+  background-color: var(--mainColor);
+}
